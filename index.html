@@ -3,8 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <title>UIST 2019 Demo Robiot</title>
+
+  <link rel="stylesheet" href="css/style.css" type="text/css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" /> 
 </head>
 <body>
-  
+  <div id="container">
+    <p class="title">Lamp:</p>
+    <button class="button" id="lamp_up" onclick="lamp_up()">UP</button>
+    <button class="button" id="lamp_down" onclick="lamp_down()">DOWN</button>
+
+    <p class="title">Trash can:</p>
+    <button class="button" id="trash_open" onclick="trash_open()">OPEN</button>
+    <button class="button" id="trash_open" onclick="trash_close()">CLOSE</button>
+  </div>
+
+  <script src="js/servercom.js"></script>
 </body>
 </html>
